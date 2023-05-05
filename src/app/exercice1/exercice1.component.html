@@ -1,8 +1,11 @@
-<br/>
-<br/>
-<br/>
-<h3>Exercice 1 : mise en place de Output et Input </h3>
-<app-exercice1-enfant></app-exercice1-enfant>
-<br/>
+<br />
+<br />
+<br />
+<h3>Exercice 1 : mise en place de Output et Input</h3>
+<app-exercice1-enfant
+  (changementCompteur)="changeCompteur($event)"
+  [compteur]="result"
+></app-exercice1-enfant>
+<br />
 <span> compteur : {{ result }}</span>
-<hr>
+<hr />
